@@ -7,7 +7,9 @@ A.I + M.L + D.L + CV + NLP + Chatbot + Cloud + Hardware
 
 This is the progressive implementation of the above concepts by the help of OpenCv Library.
 
-This involve a series of different concepts
+This involve a series of different concepts.
+
+
 Implementation on data and training models to be useful for various tasks and operations.
 
 
