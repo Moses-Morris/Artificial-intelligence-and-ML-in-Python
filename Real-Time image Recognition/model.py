@@ -37,7 +37,7 @@ while True:
             if confidence > confThresh:
                 idx = int(detections[0, 0, i, 1])
                 print("ClassID:", detections[0, 0, 1, 1])
-                box = detections[0, 0, i, 3 :7] * np.array([w , h , w,
+                box = detections[0, 0, i, 3 :7] * np.array([w , h , w, h])
                 print("boxCoord:", detections[0, 0, 1, 3 :7])
                 (startX, startY, endX, endY) =  box.astype("int")
 
@@ -50,9 +50,9 @@ while True:
                     cv2.putText(frame, label, (startx, y),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS [idx], 2)
 
-                    show("Frame", frame)
-                    cv2.waitkey(1)
-                    == 27:
-                    eak
-                    ()
-yAllWindows()
+                    cv2.show("Frame", frame)
+                    key = cv2.waitkey(1)
+                    if key == 27:
+                        break
+vs.release()
+cv2.destroyAllWindows()

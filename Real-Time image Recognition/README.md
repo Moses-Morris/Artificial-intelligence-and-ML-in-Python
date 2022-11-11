@@ -4,3 +4,5 @@ Object recognition: is a computer vision technique for identifying objects in im
 1. Pre-trained model.
 2. Transfer learning.
 3. Building from scratch. 
+
+- NB : The models have to be downloaded for use.
