@@ -1,5 +1,6 @@
 
-from facial_emotion_recognition import Emotion Recognition
+from facial_emotion_recognition 
+import Emotion Recognition
 import cv2
 er EmotionRecognition(device='cpu')
 cam cv2.VideoCapture(1)
