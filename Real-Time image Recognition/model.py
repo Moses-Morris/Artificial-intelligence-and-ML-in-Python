@@ -44,18 +44,15 @@ while True:
                 label = "{}: {: .2f}%" . format(CLASSES[idx], confidence * 100)
                 cv2.rectangle(frame, (startX, startY) , (endX, endY), COLORS[idx], 2)
                 if starty - 15 > 15:
-                y = starty - 15
+                    y = starty - 15
                 else:
-                y = starty + 15
-                cv2.putText(frame, label, (startx, y),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS [idx], 2)
+                    y = starty + 15
+                    cv2.putText(frame, label, (startx, y),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS [idx], 2)
 
-                cv2.putText(frame, label, (startx, y),
-                cv2.FONT main
-frame: Any = (vs.read())[1]
-show("Frame", frame)
-cv2.waitkey(1)
-== 27:
-eak
-()
+                    show("Frame", frame)
+                    cv2.waitkey(1)
+                    == 27:
+                    eak
+                    ()
 yAllWindows()
