@@ -3,7 +3,7 @@ import imutils #resize the image
 import cv2 #image acq.
 import time #delay
 prototxt = "Mobile NetSSD_deploy.prototxt.txt"
-model = "Mobile NetSSD_deploy.caffemodel"
+model = "MobileNetSSD_deploy.caffemodel"
 confThresh = 0.2
 CLASSES =  [" background", "aeroplane" , "bicycle" , "bird", "boat",
 "bottle", "bus", "car" , "cat" , "chair" , "cow" , "diningtable",
@@ -14,11 +14,11 @@ COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 print("Loading model ...")
 net = cv2.dnn.readNetFromCaffe(prototxt, model)
 print("Model Loaded")
-pint("Starting Camera Feed ...")
+print("Starting Camera Feed ...")
 vs = cv2.VideoCapture(1)
 time.sleep(2.0)
 while True:
-        _frame = vs.read()
+        _,frame = vs.read()
         frame = imutils.resize(frame, width=500)
         (h, w) = frame.shape[:2]
         imResize = cv2.resize(frame, (300, 300))
